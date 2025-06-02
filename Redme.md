@@ -38,7 +38,7 @@ The system captures **negotiation dynamics**, calculating product and user profi
       "round_count1": 9,
       "round_count2": 13,
       "round_count3": 17,
-      ...
+       ...,
     }
   }
 }

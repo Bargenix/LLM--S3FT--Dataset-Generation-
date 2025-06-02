@@ -1,4 +1,4 @@
-# 🛍️ Bargenix: E-Commerce Bargaining Scenario Generator
+# 🛍️ Bargenix: E-Commerce Bargaining Scenario Generator Template 2
 
 This repository provides a modular, extensible system for generating **synthetic negotiation datasets** between a user and a virtual assistant (bot) in an e-commerce setting.
 

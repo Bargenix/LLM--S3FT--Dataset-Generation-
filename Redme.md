@@ -17,7 +17,6 @@ The system captures **negotiation dynamics**, calculating product and user profi
 ## 📦 Example Output (Single Sample)
 
 ```json
-```bash
 {
   "Live_data_from_frontend": "User Info:\nuser_name = Shanaya, email = shanaya@gmail.com, ...\n\nProduct Info:\nproduct_name = Electric Fan, ...",
   "user": "User: 19% is less it seems is that all you can offer,ok lets say if you can make it to 31 thats a deal",

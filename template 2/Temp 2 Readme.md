@@ -15,7 +15,7 @@ The system captures **negotiation dynamics**, calculating product and user profi
 
 
 ## 📦 Example Output (Single Sample)
-
+### 🧾 Standard Turn (Mid-Negotiation)
 ```json
 {
   "Live_data_from_frontend": "User Info:\nuser_name = Shanaya, email = shanaya@gmail.com, ...\n\nProduct Info:\nproduct_name = Electric Fan, ...",
@@ -41,6 +41,39 @@ The system captures **negotiation dynamics**, calculating product and user profi
     }
   }
 }
+```
+### ✅ Final Round Turn (End-of-Negotiation Scenario)
+If the current_round equals the max_round_count, Bargenix attempts to close the negotiation with a final offer:
+```json
+{
+  "Live_data_from_frontend": "User Info:\nuser_name = Meera, email = meera@gmail.com, orders = 12, spent = 5014, email_verified = meera@gmail.com, refunds = 514, days_since_last = 60\n\nProduct Info:\nproduct_name = Headband, product_description = Stretchable headband, perfect for workouts or casual wear., product_color = Emerald, product_size = One Size, product_price = 4664 INR, min_price_client = 2006 INR, avg_inventory = 65, product_tag = electronics, product_type = seasonal, images_count = 2, days_since_creation = 37\n\n",
+  "user": "User: 30% is less it seems is that all you can offer,ok lets say if you can make it to 58 thats a deal",
+  "response": "Bot: thats way much higher at 58%. Since you’ve come this far, I can lower the price from my side—how about 3124.88 INR, which is up to 33% off. This is my final offer and a compact deal I can get you now itself.",
+  "metadata": {
+    "user_email_id": "meera@gmail.com",
+    "user_score": 32.15,
+    "bargain_score": 41,
+    "product_price": 4664,
+    "product_score": 20.52,
+    "admin_max_discount_from_min_price": 57,
+    "system_max_discount": 33,
+    "max_round_count": 6,
+    "current_round": 6,
+    "previous_round_discount_given": 30,
+    "user_req": 58,
+    "current_discount": 33,
+    "current_discount_price": 3124.88,
+    "round_discounts": {
+      "round_count1": 13,
+      "round_count2": 20,
+      "round_count3": 24,
+      "round_count4": 27,
+      "round_count5": 30,
+      "round_count6": 33
+    }
+  }
+}
+
 ```
 
 ## 🧠 Core Concepts

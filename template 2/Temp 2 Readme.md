@@ -15,6 +15,7 @@ The system captures **negotiation dynamics**, calculating product and user profi
 
 
 ## 📦 Example Output (Single Sample)
+Bargenix outputs each bargaining turn as a JSON object. Two typical negotiation scenarios are illustrated below:
 ### 🧾 Standard Turn (Mid-Negotiation)
 ```json
 {
